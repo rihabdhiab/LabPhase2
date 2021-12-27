@@ -1,0 +1,194 @@
+/*Navbar*/
+        body{
+           background-image: url(img/fond3.jpg);
+           background-position: center;
+           background-size:cover;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+            
+        }
+        header{
+           padding-left: 15%;
+           padding-right: 15%;
+           background-color: rgb(226, 242, 243);
+           position: sticky;
+           top: 0px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+           }
+       
+        h1{
+            
+            margin-left: 70px;
+            margin-right: 50px;
+            text-align: center;
+            padding: 20px;
+            color: rgb(51, 164, 216);
+            margin-left: 100px;
+          }  
+        .wrapper{
+            position: relative;
+            margin-top:23px ;
+           }  
+        
+        .wrapper #list-title{
+            text-decoration: none;
+            font-size: 22px;
+           
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            width: 220px;
+            height: 220px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin-left: 60px;
+            list-style: none;
+            background-color: rgb(226, 242, 243);
+            box-shadow: 3px 3px 3px 3px rgb(180, 175, 175);
+            border-radius: 5px;
+        }
+        .dropdown-content li{
+            padding: 5px;
+        }
+        .dropdown-content a{
+            text-decoration: none;
+            color: rgb(51, 164, 216);
+           }
+       .wrapper:hover .dropdown-content{
+          display: block;
+        }
+        li:hover{
+            background-color: white;
+        }
+
+        /*main-section1*/
+        main{
+            width:60%;
+            height: 1000px;
+            margin-top: 140px;
+            
+            }
+        .carousel-control-prev-icon{
+                margin-top:20px;
+                margin-left: 210px;
+                
+            }
+        .carousel-control-next-icon{
+                margin-top:20px;
+                margin-right: 210px;
+            }
+
+ /*main-section2*/
+ #section2{
+     display: flex;
+     flex-direction:column;
+     margin-top: 70px;
+ }
+ h2{
+     font-size: 10px;
+     color: rgb(51, 164, 216);
+}
+ .wrapper #list-title{
+    font-size: 20px;
+}
+ .quiz-box{
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 20px;
+     text-align: center;
+ }
+ .quiz-box label{
+     text-align: center;
+     font-size: 20px;
+ }
+ 
+.quiz-box img{
+    height: 260px;
+    width: 520px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+    }
+.quiz-box input{
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 25px;
+    border: outset rgb(128, 226, 226);
+    background-color: rgb(203, 238, 240);
+}
+
+.quiz-box input:hover{
+    background-color: cornsilk;
+    cursor: pointer;
+}
+.bravo-gif{
+    margin-left:40%;
+    padding: 10px;
+    width: 200px;
+    color: darkgreen;
+    display:none;
+}
+
+#score{
+    font-size: 25px;
+    color: rgb(17, 155, 219);
+    border-radius: 25px ;
+    background-color: rgb(204, 239, 241);
+    text-align: center;
+    padding: 10px;  
+}
+
+@media (max-width: 576px){
+  .wrapper #list-title{
+        font-size: 15px;
+        width: 100px;
+    }
+   nav h1{
+        margin: 0px;
+        padding: 20px;
+        font-size: 18px;  
+      }  
+
+    .dropdown-content{
+    margin-left: 0%;
+      }
+   .quiz-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+    .quiz-box label{
+      width: 350px;
+      text-align: center;
+    }
+      .quiz-box img{
+       width:300px ;
+       height:250px ;
+    }
+    .quiz-box input{
+      width: 200px;
+    }
+    .bravo-gif{
+        margin-left:15%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+    }
+    
+}   
+
+
+       
+       
+
+  

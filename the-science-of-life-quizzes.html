@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      body{
+        background-image: url(img/fond3.jpg);
+        background-position: center;
+        background-size:cover;
+        font-family: cursive;
+      }
+      h2{
+        color: rgb(51, 164, 216);
+        font-size: 30px;
+      }
+      .quiz-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        font-size: 20px; 
+        }
+      #score{
+        font-size: 25px;
+        color: rgb(17, 155, 219);
+        border-radius: 25px ;
+        background-color: rgb(204, 239, 241);
+        text-align: center;
+        padding: 10px; 
+        margin-top: 0px;
+        }
+
+      .quiz-box label{
+        text-align: center;
+        margin-bottom: 10px;
+        width: 600px;
+      }
+      .quiz-box img{
+        height: 260px;
+        width: 520px;
+      }
+     .quiz-box input:hover{
+        background-color: blanchedalmond;
+        cursor: pointer;
+      }
+      .quiz-box input{
+        width: 510px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 310px;
+        text-align: center;
+        margin-left: 315px;
+        border-radius: 25px;
+        border: outset rgb(128, 226, 226);
+        background-color: rgb(203, 238, 240);
+        font-family: cursive;
+        font-size: 17px;
+      }
+      .bravo-gif{
+        margin-left: 42%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+         }
+
+      @media (max-width: 576px) {
+         .quiz-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+         }
+        .quiz-box label{
+        width: 300px;
+        text-align: center;
+      }
+        .quiz-box img{
+         width:350px ;
+         height:200px ;
+      }
+         .quiz-box input{
+        width: 200px;
+      }
+      .bravo-gif{
+        margin-left: 22%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+         }
+}
+    </style>
+   
+</head>
+<body>
+
+        <img src="img/science.png" alt="" style="margin-left: 50%; margin-top: 30px;">
+        <a style="text-align: center;"><h2>The Science Of Life Quizzes </h2></a>
+      
+      <div class="quiz-box">
+        <p id="score">Score: <span id="score1">0</span> <span>%</span>   </p>
+        <label for="">1-Comment appelle-t-on un microbe qui rend malade?</label>
+        <img src="img/microbe.jpg" alt="microbe">
+        <input class="wrong" type="button" value="Allergène">
+        <input class="correct" type="button" value="Pathogène">
+        <input class="wrong" type="button" value="Allergogène">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      <div class="quiz-box">
+        <label for="">2-Comment appelle-t-on ce que libèrent les lymhocytes lors d'une attaque?</label>
+        <img src="img/lymphocytes.jpg" alt="lymhocytes">
+        <input class="correct" type="button" value="Anticorps ">
+        <input class="wrong" type="button" value="Antigènes">
+        <input class="wrong" type="button" value="Antilymphes">
+     </div>
+     <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+        
+      <div class="quiz-box">
+        <label for="">3-Où sont fabriqués les lymphocytes B?</label>
+        <img src="img/lymphocyteB.jpg" alt="lymphocyteB">
+        <input class="wrong" type="button" value="Dans le thymus">
+        <input class="correct" type="button" value="Dans la moelle osseuse">
+        <input class="wrong" type="button" value="Dans la moelle épinière">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p> 
+
+      
+      <div class="quiz-box">
+        <label for="">4-Comment appelle-t-on l'entrée des microbes dans l'organisme?</label>
+        <img src="img/infection.jpg" alt="infection">
+        <input class="correct" type="button" value="Contaminaion">
+        <input class="wrong" type="button" value="Infection">
+        <input class="wrong" type="button" value="Septicémie">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      <div class="quiz-box">
+        <label for="">5-Où sont produit les lymphocytes dits 'tueurs'?</label>
+        <img src="img/lymphociteT.jpg" alt="lymphociteT">
+        <input class="correct" type="button" value="Dans le thymus ">
+        <input class="wrong" type="button" value="Dans la moelle osseuse">
+        <input class="wrong" type="button" value="Dans la moelle épinière">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p> 
+      
+      
+      <div class="quiz-box">
+        <label for="">6-Comment appelle-t-on les globules blancs?</label>
+        <img src="img/globule-blanc.jpg" alt="globule-blanc">
+        <input class="wrong" type="button" value="Les lymphocytes">
+        <input class="correct" type="button" value="Les leucocytes">
+        <input class="wrong" type="button" value="Les phagocytes">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+      
+      <div class="quiz-box">
+        <label for="">7-Quelle est la première ligne de défense lors d'une attaque virale ou bactérienne?</label>
+        <img src="img/phagocytose.jpg" alt="phagocytose">
+        <input class="correct" type="button" value="La phagocytose">
+        <input class="wrong" type="button" value="La lymphocytose">
+        <input class="wrong" type="button" value="La leucocytose">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+      
+
+      <div class="quiz-box">
+        <label for="">8-Combien d'infections différentes il y a?</label>
+        <img src="img/infections.jpg" alt="infections">
+        <input class="correct" type="button" value="2 ">
+        <input class="wrong" type="button" value="200">
+        <input class="wrong" type="button" value="2000">    
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      <div class="quiz-box">
+        <label for="">9-Le support matériel de l’hérédité est :</label>
+        <img src="img/adn.jpg" alt="adn">
+        <input class="wrong" type="button" value="La cellule">
+        <input class="wrong" type="button" value="Le cerveau">
+        <input class="correct" type="button" value="L’ADN">  
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      <div class="quiz-box">
+        <label for="">10-Où se fixent les anticorps?</label>
+        <img src="img/anticorp.jpg" alt="anticorp">
+        <input class="correct" type="button" value="Sur les antigènes ">
+        <input class="wrong" type="button" value="Sur la lymphe">
+        <input class="wrong" type="button" value="Sur la peau">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+     
+   <script src="quiz.js"></script>   
+</body>
+</html>

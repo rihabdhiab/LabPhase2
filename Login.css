@@ -1,0 +1,91 @@
+body{
+background-image: url(img/background2.jpg);
+background-position: center;
+background-size:cover;
+height: 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: cursive;
+}
+
+#login-box{
+    width:300px;
+    height:400px;
+    background:radial-gradient(rgba(255,255,255,0.6));
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    color:rgb(43, 113, 141) ;
+    
+}
+#user-img{
+    height:100px;
+    width:100px;
+   margin-left:100px;
+   margin-top:-50px;
+    
+}
+h2{
+    margin-left: 100px;
+}
+
+label,input{
+    margin-left: 20px;
+}
+
+input[type=username],input[type=password]  {
+    width:80%;
+    height: 20px;
+    outline: none;
+    background: transparent;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: solid 2px rgb(173, 166, 166);
+    color: rgb(14, 9, 9);
+    font-size: 15px;
+    font-family: cursive;
+    margin-bottom: 20px;
+    padding: 7px;
+}
+input:hover{
+   
+border-bottom: solid rgb(43, 113, 141);
+}
+.input-field{
+    display: flex;
+}
+#eye-icon{
+    margin-bottom: 30px;
+    margin-right: 10px;
+    
+}
+
+.form-grp .fa{
+    display: none;
+}
+.fa-times{
+    color: red;
+}
+.fa-check{
+    color: green;
+}
+#login-btn{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(81, 113, 182);
+    border-radius: 5px;
+    border: none;
+    margin-left: 100px;
+}
+#login-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:rgb(81, 113, 182) ;
+}
+#error{
+    color: red;
+    text-align: center;
+}

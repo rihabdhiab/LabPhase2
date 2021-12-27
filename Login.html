@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+</head>
+<body>
+    
+    
+    <div id="login-box">
+        <img id="user-img" src="img/man.png" alt="user" >
+        <h2>ADMIN</h2> 
+        <form class="form-container"  method="post">
+          <p id="error"></p>
+            <div class="form-grp">
+                <label for="username">Username:</label>
+                <div class="input-field">
+                  <input type="username" name="username" placeholder="your username" id="username">
+                  <i class="fa fa-times u_times"></i>
+                  <i class="fa fa-check u_check"></i>
+                </div>
+                
+            </div>
+          
+            <div class="form-grp"> 
+               <label for="password">Password:</label>
+               <div class="input-field">
+                  <input type="password" name="password" placeholder="your password" id="password" >
+                  <img src="img/eye.png" alt="eye" id="eye-icon" onclick="see()"  >
+                  <i class="fa fa-times p_times"></i>
+                  <i class="fa fa-check p_check"></i>
+               </div>
+              
+            </div>
+         <input type="button" name="login-btn" value="Login" onclick="validation()" id="login-btn" >
+    
+       
+        
+    </form>
+
+    </div>
+    
+ 
+  <script>
+    
+      function see(){
+          var password=document.getElementById("password");
+          if (password.type==="password"){
+            password.type="text";
+          }
+          else {
+            password.type="password"
+          }
+      }
+
+      var user= document.querySelector('#username');
+      user.addEventListener('keyup',function(){
+      var u_times= document.querySelector('.u_times');
+      var u_check=document.querySelector('.u_check');
+      if (user.value.length==0|| user.value.length<6){
+      user.style.border='1px solid red'
+      u_times.style.display='block';
+      u_check.style.display= 'none';}
+      else{
+      user.style.border ='1px solid green';
+      u_times.style.display='none';
+      u_check.style.display= 'block';}
+      })
+
+
+      var pass= document.querySelector('#password');
+      pass.addEventListener('keyup',function(){
+      var p_times= document.querySelector('.p_times');
+      var p_check=document.querySelector('.p_check');
+      if (pass.value.length==0|| pass.value.length<8){
+      pass.style.border='1px solid red'
+      p_times.style.display='block';
+      p_check.style.display= 'none';}
+      else{
+      pass.style.border ='1px solid green';
+      p_times.style.display='none';
+      p_check.style.display= 'block';}
+      })
+
+
+      function validation(){
+if(user.value.length==0|| user.value.length<6){
+document.getElementById('error').innerHTML='Please fill the required fields!';
+
+}else if (pass.value.length==0|| pass.value.length<8){
+document.getElementById('error').innerHTML='Please fill the required fields!';
+}
+else{
+  alert('Seccessfully logged in')
+  window.location.href="Geography-Quizzes.html"
+}
+      }
+
+      
+       
+  </script>
+</body>
+</html>

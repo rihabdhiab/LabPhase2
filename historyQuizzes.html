@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      body{
+        background-image: url(img/fond3.jpg);
+        background-position: center;
+        background-size:cover;
+        font-family: cursive;
+        }
+      h2{
+        color: rgb(51, 164, 216);
+        font-size: 30px;
+      }
+      #score{
+      font-size: 25px;
+      color: rgb(17, 155, 219);
+      border-radius: 25px ;
+      background-color: rgb(204, 239, 241);
+      text-align: center;
+      padding: 10px;  
+      margin-top:0px;
+        }
+      .quiz-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        font-size: 20px;
+        
+        }
+      .quiz-box label{
+        text-align: center;
+        margin-bottom: 10px;
+        width: 600px;
+      }
+      .quiz-box img{
+        height: 260px;
+        width: 520px;
+      }
+     .quiz-box input:hover{
+        background-color: blanchedalmond;
+        cursor: pointer;
+      }
+      .quiz-box input{
+        width: 510px;
+        height: 40px;
+        margin-top: 10px;
+        margin-right: 310px;
+        text-align: center;
+        margin-left: 315px;
+        border-radius: 25px;
+        border: outset rgb(128, 226, 226);
+        background-color: rgb(203, 238, 240);
+        font-family: cursive;
+        font-size: 17px;
+      }
+    
+      .bravo-gif{
+        margin-left: 42%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+         }
+  
+      @media (max-width: 576px) {
+         .quiz-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+         }
+        .quiz-box label{
+        width: 300px;
+        text-align: center;
+      }
+        .quiz-box img{
+         width:350px ;
+         height:200px ;
+      }
+         .quiz-box input{
+        width: 200px;
+      }
+      .bravo-gif{
+        margin-left: 22%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+         }
+}
+    </style>
+   
+</head>
+<body style=>
+  <main>
+      <img src="img/history.png" alt="" style="margin-left: 50%; margin-top: 30px;">
+      <a name="History-Quizzes" style="text-align: center;" ><h2>History Quizzes </h2></a>
+      
+      <div class="quiz-box">
+        <p id="score">Score: <span id="score1">0</span> <span>%</span> </p>
+        <label for="">1-Un valeureux Carthaginois a traversé les Alpes avec son armée et ses éléphants pour combattre les Romains. Qui est-il?</label>
+        <img src="img/hannibal.jpg" alt="hannibal">
+        <input class="wrong" type="button" value="Christophe Colomb">
+        <input class="wrong"  type="button" value="Ibn Batouta">
+        <input class="correct" type="button" value="Hannibal">
+        <input class="wrong"type="button" value="Tarak Ibn Zied">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">2-La première femme tunisienne  a obtenu son diplôme de médecin en 1936. Qui est-ce?</label>
+        <img src="img/tawhida.png" alt="tawhida">
+        <input class="wrong" type="button" value="Aziza Othmana">
+        <input class="correct" type="button" value="Tawhida Ben Cheikh">
+        <input class="wrong" type="button" value="Bchira Ben M'Rad">
+        <input class="wrong" type="button" value="Alia Menchari">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+       
+      
+      <div class="quiz-box">
+        <label for="">3-Le festival d'El Jem du mois de Juillet est consacré à?</label>
+        <img src="img/festival.jpg" alt="festival">
+        <input class="wrong" type="button" value="La musique de Mezoued">
+        <input class="wrong" type="button" value="La musique électronique">
+        <input class="wrong" type="button" value="La musique orientale ">
+        <input class="correct" type="button" value="La musique classique  ">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box"> 
+        <label for="">4-La puissance de Carthage est détruite par les Romains au IIe siècle av. J.-C. lors des guerres :</label>
+        <img src="img/guerre-punique.jpg" alt="guerre-punique">
+        <input class="wrong" type="button" value="Runiques">
+        <input class="correct"  type="button" value="Puniques">
+        <input class="wrong"type="button" value="Cuniques ">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+      
+      
+      <div class="quiz-box">
+        <label for="">5-La présence romaine en Tunisie se caractérise par la présence de monuments remarquables dont l’exemple est :</label>
+        <img src="img/el-jem.jpg" alt="el-jem" width="100px">
+        <input class="correct"  type="button" value="L’amphithéâtre d’El Jem">
+        <input class="wrong" type="button" value="La cité de Timgad">
+        <input class="wrong" type="button" value="Les thermes de Caracalla">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      
+      <div class="quiz-box">
+        <label for="">6-Quelle ville abritant la Grande Mosquée est considérée aussi comme une ville sainte de l’islam ?</label>
+        <img src="img/mosquée-kairouan.jpg" alt="mosquée-kairouan">
+        <input class="wrong" type="button" value="Monastir">
+        <input class="correct" type="button" value="Kairouan">
+        <input class="wrong" type="button" value="Bizerte">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      
+      <div class="quiz-box">
+        <label for="">7-Après la domination ottomane, sous quel protectorat la Tunisie passe-t-elle en 1881 ?</label>
+        <img src="img/protectorat-francaise.jpg" alt="protectorat-francaise">
+        <input class="correct"  type="button" value="Protectorat français">
+        <input class="wrong" type="button" value="Protectorat anglais">
+        <input class="wrong" type="button" value="Protectorat italien">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p> 
+      
+
+      <div class="quiz-box">
+        <label for="">8-Quelle est l'année de l'indépendance de la Tunisie ?</label>
+        <img src="img/indépendance1.jpg" alt="tunisie">
+        <input class="correct" type="button" value="1956 ">
+        <input class="wrong" type="button" value="1957"> 
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">9-Quel est le jour de l'indépendance ?</label>
+        <img src="img/indépendance.jpg" alt="indépendance">
+        <input class="correct" type="button" value="20 Mars">
+        <input class="wrong" type="button" value="14 Janvier">  
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">10-Le premier président de la République tunisienne est :</label>
+        <img src="img/bourguiba-1.jpg" alt="président">
+        <input class="correct" type="button" value="Habib Bourguiba">
+        <input class="wrong" type="button" value="Lamine Bey">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+    
+    </main>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>

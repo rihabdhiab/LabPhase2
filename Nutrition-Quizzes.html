@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+          background-image: url(img/fond3.jpg);
+          background-position: center;
+          background-size:cover;
+          font-family: cursive;
+        }
+        h2{
+          color: rgb(51, 164, 216);
+          font-size: 30px;
+        }
+       
+        .quiz-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 50px;
+          font-size: 20px;
+          }
+          #score{
+          font-size: 25px;
+          color: rgb(17, 155, 219);
+          border-radius: 25px ;
+          background-color: rgb(204, 239, 241);
+          text-align: center;
+          padding: 10px; 
+          margin-top: 0px;
+          }
+        .quiz-box label{
+          
+          text-align: center;
+          margin-bottom: 10px;
+          width: 600px;
+        }
+        .quiz-box img{
+          height: 260px;
+          width: 520px;
+        }
+       .quiz-box input:hover{
+          background-color: blanchedalmond;
+          cursor: pointer;
+        }
+        .quiz-box input{
+          width: 510px;
+          height: 40px;
+          margin-top: 10px;
+          margin-right: 310px;
+          text-align: center;
+          margin-left: 315px;
+          border-radius: 25px;
+          border: outset rgb(128, 226, 226);
+          background-color: rgb(203, 238, 240);
+          font-family: cursive;
+          font-size: 17px;
+        }
+        .bravo-gif{
+        margin-left: 42%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+         }
+
+        @media (max-width: 576px) {
+         .quiz-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+         }
+        .quiz-box label{
+        width: 300px;
+        text-align: center;
+      }
+        .quiz-box img{
+         width:350px ;
+         height:200px ;
+      }
+         .quiz-box input{
+        width: 200px;
+      }
+      .bravo-gif{
+        margin-left: 22%;
+        padding: 10px;
+        width: 200px;
+        color: darkgreen;
+        display:none;
+         }
+}
+      </style>
+   
+</head>
+<body style="font-family: cursive;">
+        <img src="img/diet.png" alt="" style="margin-left: 50%; margin-top: 30px;">
+        <a  style="text-align: center;" ><h2>Nutrition Quizzes </h2></a>
+      
+      <div class="quiz-box">
+        <p id="score">Score: <span id="score1">0</span> <span>%</span>   </p>
+        <label for="">1-La tomate est-elle un fruit ou un légume?</label>
+        <img src="img/tomate.jpg" alt="tomate">
+        <input class="wrong" type="button" value="Un fruit">
+        <input class="correct" type="button" value="Un légume">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">2-Parmi les propositions, quel est l'aliment le plus riche en vitamine C (à quantité égale)</label>
+        <img src="img/vitamineC.png" alt="vitamineC">
+        <input class="wrong" type="button" value="Le kiwi  ">
+        <input class="wrong" type="button" value="L'abricot">
+        <input class="correct" type="button" value="Le poivron rouge cru">
+    </div>
+    <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+        
+      <div class="quiz-box">
+        <label for="">3-Quelle proposition est fausse? Le calcium...</label>
+        <img src="img/calcium.jpg" alt="calcium">
+        <input class="wrong" type="button" value="permet de fortifier le squelette">
+        <input class="wrong" type="button" value="intervient dans de nombreuses réactions enzymatiques de l'organisme">
+        <input class="correct"  type="button" value="permet la production d’hémoglobine">
+      </div>  
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      
+      <div class="quiz-box">
+        <label for="">4-A quantité égale, quel est l'aliment le plus riche en Fer (qui est utile au niveau de la force musculaire)?</label>
+        <img src="img/fer.jpg" alt="fer">
+        <input class="correct"  type="button" value="Le boudin noir">
+        <input class="wrong" type="button" value="Les épinards">
+        <input class="wrong" type="button" value="Les lentilles ">
+        <input class="wrong" type="button" value="Le steak haché">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">5-En combien de temps se déroule la digestion (au niveau de l'estomac)?</label>
+        <img src="img/digestion.jpg" alt="digestion">
+        <input class="wrong" type="button" value="12 heures">
+        <input class="wrong" type="button" value="1 heure">
+        <input class="correct"  type="button" value="3 à 4 heures ">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+ 
+      
+      
+      <div class="quiz-box">
+        <label for="">6-L'huile d'olive est la meilleure huile au niveau des acides gras (omégas), vrai ou faux?</label>
+        <img src="img/huile d'olive.jpeg" alt="huile d'olive">
+        <input class="wrong" type="button" value="Vrai ">
+        <input class="correct"  type="button" value="Faux">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      
+      <div class="quiz-box">
+        <label for="">7-On peut manger des fruits à volonté, vrai ou faux?</label>
+        <img src="img/fruits.jpg" alt="fruits">
+        <input class="correct"  type="button" value="Faux ">
+        <input class="wrong" type="button" value="Vrai">
+      </div> 
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+      
+
+      <div class="quiz-box">
+        <label for="">8-On peut boire n'importe quelle eau, vrai ou faux?</label>
+        <img src="img/eau.jpg" alt="eau">
+        <input class="wrong" type="button" value="Vrai ">
+        <input class="correct"  type="button" value="Faux "> 
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">9-Parmi ces propositions, dans quel aliment n'y a-t-il pas de gluten?</label>
+        <img src="img/gluten.jpg" alt="gluten">
+        <input class="wrong" type="button" value="Les corn-flakes ">
+        <input class="wrong" type="button" value="Le pain">
+        <input class="correct"  type="button" value="La pomme de terre">  
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+
+      <div class="quiz-box">
+        <label for="">10-Parmi ces propositions, dans quel aliment ne trouve-t-on pas de cholestérol?</label>
+        <img src="img/cholestérol.jpg" alt="cholestérol">
+        <input class="wrong" type="button" value="Le foie de veau ">
+        <input class="correct"  type="button" value="L'huile de tournesol">
+        <input class="wrong" type="button" value="Les oeufs ">
+        <input class="wrong" type="button" value="Le beurre ">
+      </div>
+      <p class="bravo-gif" > Good Job <img src="img/bravo.gif" alt="" height="80px" width="80px" ></p>
+
+<script src="quiz.js"></script>
+    
+</body>
+</html>
